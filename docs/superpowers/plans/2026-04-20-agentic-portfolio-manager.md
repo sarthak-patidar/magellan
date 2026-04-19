@@ -253,7 +253,7 @@ git commit -m "chore: scaffold personal-pm plugin"
             "required": ["hold_gte_days", "rate"],
             "properties": {
               "hold_gte_days": {"type": "integer"},
-              "rate": {"type": "number"},
+              "rate": {},
               "exemption_inr": {"type": "number"}
             }
           }
