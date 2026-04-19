@@ -3,6 +3,10 @@
     "kite": {
       "type": "sse",
       "url": "https://mcp.kite.trade/mcp"
+    },
+    "market-data": {
+      "command": "python",
+      "args": ["mcps/market_data/server.py"]
     }
   }
 }
