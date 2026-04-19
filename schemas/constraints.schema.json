@@ -1,0 +1,22 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["min_hold_days", "turnover_cap_monthly", "concentration_caps", "benchmarks"],
+  "properties": {
+    "min_hold_days": {"type": "integer", "minimum": 0},
+    "turnover_cap_monthly": {"type": "number", "minimum": 0, "maximum": 1},
+    "concentration_caps": {
+      "type": "object",
+      "required": ["single_issuer", "sector"],
+      "properties": {
+        "single_issuer": {"type": "number"},
+        "sector": {"type": "number"}
+      }
+    },
+    "benchmarks": {
+      "type": "object",
+      "required": ["IN", "US"],
+      "properties": {"IN": {"type": "string"}, "US": {"type": "string"}}
+    }
+  }
+}

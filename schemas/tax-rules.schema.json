@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["rules"],
+  "properties": {
+    "rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "match", "stcg", "ltcg"],
+        "properties": {
+          "id": {"type": "string"},
+          "match": {
+            "type": "object",
+            "required": ["market", "instrument", "residency"],
+            "properties": {
+              "market": {"enum": ["IN", "US"]},
+              "instrument": {"enum": ["equity", "equity_mf", "debt_mf"]},
+              "residency": {"enum": ["IN", "US"]}
+            }
+          },
+          "stcg": {
+            "type": "object",
+            "required": ["hold_lt_days", "rate"],
+            "properties": {
+              "hold_lt_days": {"type": "integer"},
+              "rate": {}
+            }
+          },
+          "ltcg": {
+            "type": "object",
+            "required": ["hold_gte_days", "rate"],
+            "properties": {
+              "hold_gte_days": {"type": "integer"},
+              "rate": {"type": "number"},
+              "exemption_inr": {"type": "number"}
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["asset_class_bands", "per_market_caps"],
+  "properties": {
+    "asset_class_bands": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": ["target", "min", "max"],
+        "properties": {
+          "target": {"type": "number", "minimum": 0, "maximum": 1},
+          "min": {"type": "number", "minimum": 0, "maximum": 1},
+          "max": {"type": "number", "minimum": 0, "maximum": 1}
+        }
+      }
+    },
+    "per_market_caps": {
+      "type": "object",
+      "additionalProperties": {"type": "number", "minimum": 0, "maximum": 1}
+    }
+  }
+}

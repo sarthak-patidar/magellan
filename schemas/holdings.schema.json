@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "required": ["as_of", "fx", "lots"],
+  "properties": {
+    "as_of": {"type": "string", "format": "date"},
+    "fx": {
+      "type": "object",
+      "required": ["USDINR"],
+      "properties": {"USDINR": {"type": "number"}}
+    },
+    "lots": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["account", "symbol", "market", "instrument", "qty", "entry_date"],
+        "properties": {
+          "account": {"type": "string"},
+          "symbol": {"type": "string"},
+          "market": {"enum": ["IN", "US"]},
+          "instrument": {"enum": ["equity", "equity_mf", "debt_mf"]},
+          "qty": {"type": "number"},
+          "avg_cost_inr": {"type": "number"},
+          "avg_cost_usd": {"type": "number"},
+          "entry_date": {"type": "string", "format": "date"},
+          "cost_basis_inr": {"type": "number"},
+          "cost_basis_usd": {"type": "number"}
+        }
+      }
+    }
+  }
+}
