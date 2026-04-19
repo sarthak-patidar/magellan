@@ -1,0 +1,19 @@
+accounts:
+  - id: kite-eq
+    broker: zerodha_kite
+    market: IN
+    currency: INR
+    source: csv
+    residency: IN
+  - id: coin-mf
+    broker: zerodha_coin
+    market: IN
+    currency: INR
+    source: csv
+    residency: IN
+  - id: indmoney-us
+    broker: indmoney_alpaca
+    market: US
+    currency: USD
+    source: csv
+    residency: IN

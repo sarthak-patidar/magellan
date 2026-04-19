@@ -1,0 +1,20 @@
+as_of: "2026-04-20"
+fx:
+  USDINR: 83.42
+lots:
+  - account: kite-eq
+    symbol: RELIANCE.NS
+    market: IN
+    instrument: equity
+    qty: 10
+    avg_cost_inr: 2400.00
+    entry_date: "2025-01-10"
+    cost_basis_inr: 24000.00
+  - account: indmoney-us
+    symbol: NVDA
+    market: US
+    instrument: equity
+    qty: 10
+    avg_cost_usd: 785.00
+    entry_date: "2024-09-03"
+    cost_basis_usd: 7850.00

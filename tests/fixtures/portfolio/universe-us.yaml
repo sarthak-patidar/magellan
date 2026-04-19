@@ -1,0 +1,10 @@
+market: US
+tickers:
+  # Nasdaq 100 — refresh on Nasdaq reconstitution dates
+  - AAPL
+  - MSFT
+  - NVDA
+  - GOOGL
+  - AMZN
+  # ... (populate with current Nasdaq 100 constituents at install time)
+watchlist: []

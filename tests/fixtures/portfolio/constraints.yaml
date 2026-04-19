@@ -1,0 +1,8 @@
+min_hold_days: 30
+turnover_cap_monthly: 0.30
+concentration_caps:
+  single_issuer: 0.08
+  sector: 0.30
+benchmarks:
+  IN: "^NSEI"
+  US: "^NDX"
