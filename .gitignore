@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+
+# IDE
+.idea/
+
+# Portfolio secrets — never commit live holdings/imports
+/portfolio/holdings.yaml
+/imports/
+*.csv
+*.xlsx
+
+# OS
+.DS_Store
