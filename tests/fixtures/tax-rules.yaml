@@ -1,0 +1,9 @@
+rules:
+  - id: in_listed_equity
+    match: {market: IN, instrument: equity, residency: IN}
+    stcg: {hold_lt_days: 365, rate: 0.20}
+    ltcg: {hold_gte_days: 365, rate: 0.125, exemption_inr: 125000}
+  - id: us_equity_for_in_resident
+    match: {market: US, instrument: equity, residency: IN}
+    stcg: {hold_lt_days: 730, rate: "slab"}
+    ltcg: {hold_gte_days: 730, rate: 0.125}
