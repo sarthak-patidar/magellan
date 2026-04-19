@@ -1,0 +1,9 @@
+asset_class_bands:
+  equity_in:   {target: 0.50, min: 0.40, max: 0.60}
+  equity_us:   {target: 0.30, min: 0.20, max: 0.40}
+  mf_in:       {target: 0.15, min: 0.10, max: 0.25}
+  cash:        {target: 0.05, min: 0.00, max: 0.15}
+per_market_caps:
+  equity_in_single_stock: 0.08
+  equity_us_single_stock: 0.08
+  sector_cap: 0.30

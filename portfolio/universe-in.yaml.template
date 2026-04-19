@@ -1,0 +1,10 @@
+market: IN
+tickers:
+  # Nifty 50 — refresh on NSE reconstitution dates
+  - RELIANCE.NS
+  - TCS.NS
+  - HDFCBANK.NS
+  - INFY.NS
+  - ICICIBANK.NS
+  # ... (populate with current Nifty 50 constituents at install time)
+watchlist: []
