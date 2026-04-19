@@ -11,4 +11,7 @@ Personal agentic portfolio manager built as a Cowork plugin. Advisory only — n
 - India: Zerodha Kite (equity) and Zerodha Coin (MF) — CSV or Kite MCP.
 - US: IndMoney (Alpaca-backed) — CSV only (no public API).
 
+## Smoke test
+First-run checklist is in [`tests/smoke/README.md`](tests/smoke/README.md). Work top-down; stop at the first red flag.
+
 See `docs/superpowers/specs/2026-04-20-agentic-portfolio-manager-design.md` for the full design.
