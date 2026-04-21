@@ -5,7 +5,7 @@
       "url": "https://mcp.kite.trade/mcp"
     },
     "market-data": {
-      "command": "python",
+      "command": "/Users/sarthak/PycharmProjects/portfolio-management/.venv/bin/python",
       "args": ["mcps/market_data/server.py"]
     }
   }

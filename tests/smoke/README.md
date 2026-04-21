@@ -1,6 +1,6 @@
 # Smoke Test — v0.1.0 Sign-off
 
-First-run checklist for the `personal-pm` plugin. Work top-down. Stop at the first red flag and fix before proceeding.
+First-run checklist for the `lynch` plugin. Work top-down. Stop at the first red flag and fix before proceeding.
 
 ## 0. Prerequisites
 

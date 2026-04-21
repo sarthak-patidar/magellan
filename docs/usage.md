@@ -1,6 +1,6 @@
-# personal-pm — Usage & Integration Guide
+# lynch — Usage & Integration Guide
 
-End-to-end guide for installing, wiring, and operating the `personal-pm` plugin. Advisory-only portfolio manager for India (Zerodha Kite / Coin) and US (IndMoney) markets.
+End-to-end guide for installing, wiring, and operating the `lynch` plugin. Advisory-only portfolio manager for India (Zerodha Kite / Coin) and US (IndMoney) markets. Named after Peter Lynch — active, hands-on, rotation-aware.
 
 - **Design spec:** `docs/superpowers/specs/2026-04-20-agentic-portfolio-manager-design.md`
 - **Implementation plan:** `docs/superpowers/plans/2026-04-20-agentic-portfolio-manager.md`
@@ -60,7 +60,7 @@ Seven user-facing skills compose five specialist subagents, two MCPs, and six pu
 
 The plugin ships as a `.plugin` file (a zip of the repo at a tagged commit). To install:
 
-1. Open Cowork → attach the `personal-pm.plugin` file in chat (or drag it in).
+1. Open Cowork → attach the `lynch.plugin` file in chat (or drag it in).
 2. Cowork renders a rich install preview. Review the contents, click **Install**.
 3. After install, run `/reload-plugins` (or start a new session) so all skills / subagents / MCPs are discovered.
 
@@ -68,8 +68,8 @@ To (re)build the `.plugin` from a source checkout:
 
 ```bash
 cd /path/to/portfolio-management
-git archive --format=zip HEAD -o /tmp/personal-pm.plugin
-# Attach /tmp/personal-pm.plugin to a Cowork message
+git archive --format=zip HEAD -o /tmp/lynch.plugin
+# Attach /tmp/lynch.plugin to a Cowork message
 ```
 
 `git archive` produces a clean zip from tracked files only — no `.venv`, no `.idea`, no IDE clutter.
@@ -81,7 +81,7 @@ If you're running this in Claude Code CLI instead of Cowork:
 ```bash
 # From inside a Claude Code session, pointing at the plugin folder
 /plugin marketplace add /path/to/portfolio-management
-/plugin install personal-pm@<marketplace-name>
+/plugin install lynch@<marketplace-name>
 /reload-plugins
 ```
 
