@@ -2,7 +2,7 @@
   "name": "personal-pm",
   "version": "0.1.0",
   "description": "Personal agentic portfolio manager for India (Kite/Coin) and US (IndMoney). Advisory only, CSV-first.",
-  "author": {"name": "Symplora"},
+  "author": {"name": "Sarthak Patidar"},
   "skills": ["skills"],
   "agents": ["agents"],
   "mcpServers": ".mcp.json"
