@@ -46,3 +46,20 @@ Full walkthrough in [`docs/usage.md`](docs/usage.md).
 - [`tests/smoke/README.md`](tests/smoke/README.md) — first-run sign-off checklist
 - [`docs/superpowers/specs/2026-04-20-agentic-portfolio-manager-design.md`](docs/superpowers/specs/2026-04-20-agentic-portfolio-manager-design.md) — full design spec
 - [`docs/superpowers/plans/2026-04-20-agentic-portfolio-manager.md`](docs/superpowers/plans/2026-04-20-agentic-portfolio-manager.md) — implementation plan
+
+## Disclaimer
+
+**`lynch` is not financial advice.** It is a decision-support tool that surfaces drift, momentum signals, and tax-lot candidates from *your* data against *your* IPS. Every output is a proposal — you are the one who decides what to trade, and you are the one who places the trade with your broker.
+
+- No warranties, express or implied. See `LICENSE`.
+- Markets can and will move against any signal this tool generates.
+- Tax rules change. The built-in India/US tax logic is a best-effort approximation — verify with your CA/CPA before acting on any harvesting or LTCG suggestion.
+- Past performance of any momentum rule does not predict future returns.
+
+If you need regulated advice, talk to a SEBI-registered investment advisor (India) or a fiduciary RIA (US).
+
+## License
+
+Apache License 2.0 — see [`LICENSE`](LICENSE).
+
+Copyright 2026 Sarthak Patidar.

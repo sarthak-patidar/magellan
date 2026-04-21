@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Agentic portfolio manager for India (Kite/Coin) and US (IndMoney). Momentum rotation + IPS-disciplined rebalancing. Named after Peter Lynch. Advisory only.",
   "author": {"name": "Sarthak Patidar"},
+  "license": "Apache-2.0",
   "skills": ["skills"],
   "agents": ["agents"],
   "mcpServers": ".mcp.json"
