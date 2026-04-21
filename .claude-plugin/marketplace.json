@@ -1,0 +1,24 @@
+{
+  "name": "magellan",
+  "owner": {
+    "name": "Sarthak Patidar"
+  },
+  "metadata": {
+    "description": "Investing-themed Claude Code plugins. Named after Fidelity Magellan — the fund Peter Lynch ran at 29% CAGR.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "lynch",
+      "source": "./plugins/lynch",
+      "description": "Agentic portfolio manager for India (Kite/Coin) and US (IndMoney). Momentum rotation + IPS-disciplined rebalancing. Advisory only.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Sarthak Patidar"
+      },
+      "category": "finance",
+      "tags": ["portfolio", "momentum", "rebalance", "tax", "india", "us", "investing"],
+      "license": "Apache-2.0"
+    }
+  ]
+}
